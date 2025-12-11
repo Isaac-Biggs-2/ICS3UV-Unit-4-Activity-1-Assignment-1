@@ -15,7 +15,6 @@ numbermarks = prompt("How many marks will you enter today?") || "No marks entere
 amountmarks = parseInt(numbermarks);
 
 //loop through the number of marks
-for (let average = 1; average <= amountmarks; average++);
-averagegrade +=(average)
+for 
 
-console.log(averagegrade)
+console.log(

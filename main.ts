@@ -11,6 +11,7 @@ let total = 0;
 // Ask how many grades the user wants to enter
 const inputCount = prompt("How many grades do you want to enter?");
 
+//get marks for numebr of grades then calculate average
 if (inputCount !== null) {
   numberGrades = Number(inputCount);
 
@@ -25,4 +26,16 @@ if (inputCount !== null) {
 
   const average = total / numberGrades;
   console.log(`You have entered ${numberGrades} marks. The student's average is ${average}% `);
+
+  if (average <= 49){
+    console.log("Student is failing")
+  }
 }
+
+if (average <= 49) {
+  console.log("Student is failing")
+}
+
+
+
+console.log("\nDone.")

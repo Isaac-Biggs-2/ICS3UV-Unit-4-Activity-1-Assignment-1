@@ -5,16 +5,24 @@
  * @fileoverview This program will calculate the average of a set of provided marks
 */
 //variables 
-let numbermarks: string;
-let amountmarks: number;
-let averagegrade = "";
-//prompt user for number of marks
-numbermarks = prompt("How many marks will you enter today?") || "No marks entered!";
+let numberGrades = 0;
+let total = 0;
 
-//covert string to numbner
-amountmarks = parseInt(numbermarks);
+// Ask how many grades the user wants to enter
+const inputCount = prompt("How many grades do you want to enter?");
 
-//loop through the number of marks
-for 
+if (inputCount !== null) {
+  numberGrades = Number(inputCount);
 
-console.log(
+  for (let i = 1; i <= numberGrades; i++) {
+    const gradeInput = prompt(`Enter grade ${i}:`);
+
+    if (gradeInput !== null) {
+      const grade = Number(gradeInput);
+      total += grade;
+    }
+  }
+
+  const average = total / numberGrades;
+  console.log(`You have entered ${numberGrades} marks. The student's average is ${average}% `);
+}

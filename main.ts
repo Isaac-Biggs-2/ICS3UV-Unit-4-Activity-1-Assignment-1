@@ -25,16 +25,30 @@ if (inputCount !== null) {
   }
 
   const average = total / numberGrades;
-  console.log(`You have entered ${numberGrades} marks. The student's average is ${average}% `);
+  console.log(`You have entered ${numberGrades} marks. The student's average is ${average.toFixed(2) }% `);
 
+  //if statements
   if (average <= 49){
     console.log("Student is failing")
   }
+
+  if (average >= 50 && average <= 69) {
+    console.log("The student's performance is just under average.");
+  }
+
+  if (average >= 70 && average <= 79) {
+    console.log("The student's performance is average.");
+  }
+
+  if (average >= 50 && average <= 69) {
+    console.log("The student is on the honour roll.");
+  }
+
+
 }
 
-if (average <= 49) {
-  console.log("Student is failing")
-}
+
+
 
 
 
